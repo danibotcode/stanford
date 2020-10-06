@@ -14,8 +14,8 @@ function Sidebar() {
     return (
       <div className="sidebar">
         <SidebarRow
-          src="https://i.pinimg.com/originals/64/78/b4/6478b40ee5f7f169b6d25f914ccfcac2.png"
-          title="sunetid"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLZxZoZgz_DSp_qb8YRgfEy61raIXcPJVavw&usqp=CAU"
+          title="daniweav"
         />
         <SidebarRow
           Icon={LocalHospitalIcon}

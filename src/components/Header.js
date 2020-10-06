@@ -50,7 +50,7 @@ function Header() {
         <div className="header__right">
           <div className="header__info">
             <Avatar />
-            <h4 style={{ color: "white" }}>sunetid</h4>
+            <h4 style={{ color: "white" }}>daniweav</h4>
           </div>
 
           <IconButton>
