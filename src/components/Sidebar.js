@@ -9,13 +9,17 @@ import ChatIcon from "@material-ui/icons/Chat";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMoreOutlined";
+import { useStateValue } from "../StateProvider";
+
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
+
     return (
       <div className="sidebar">
         <SidebarRow
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLZxZoZgz_DSp_qb8YRgfEy61raIXcPJVavw&usqp=CAU"
-          title="daniweav"
+          src={user.photoURL}
+          title={user.displayName}
         />
         <SidebarRow
           Icon={LocalHospitalIcon}
