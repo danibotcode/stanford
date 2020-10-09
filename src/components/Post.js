@@ -7,15 +7,22 @@ import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMoreOutlined";
 
+
+
 function Post({profilePic, image, username, timestamp, 
     message }) {
+
+      
+      
+      
     return (
       <div className="post">
         <div className="post__top">
           <Avatar src={profilePic} className="post__avatar" />
           <div className="post__topInfo">
             <h3>{username}</h3>
-            <p>now</p>
+            <p>{new Date(timestamp?.seconds * 1000).toLocaleDateString("en-US")}</p>
+            
           </div>
         </div>
 
@@ -27,20 +34,20 @@ function Post({profilePic, image, username, timestamp,
           <img src={image} alt="" />
         </div>
 
-        <div class="post__options">
-          <div class="post__option">
+        <div className="post__options">
+          <div className="post__option">
             <ThumbUpIcon />
             <p>Like</p>
           </div>
-          <div class="post__option">
+          <div className="post__option">
             <ChatBubbleOutlineIcon />
             <p>Comment</p>
           </div>
-          <div class="post__option">
+          <div className="post__option">
             <NearMeIcon />
             <p>Share</p>
           </div>
-          <div class="post__option">
+          <div className="post__option">
             <AccountCircleIcon />
             <ExpandMoreOutlined />
           </div>
