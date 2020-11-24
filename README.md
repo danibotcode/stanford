@@ -1,3 +1,7 @@
+
+live demo: https://stanford-cap-1cd8e.firebaseapp.com/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
